@@ -11,9 +11,9 @@ const {
 export default Component.extend(EmberRedux, {
   store: service(),
   reduxStore: Ember.inject.service(),
-  state: computed.alias('reduxStore.state'),
+  state: computed.reads('reduxStore.state'),
 
-  newTitle: computed.alias('state.todo.newTitle'),
+  newTitle: computed.reads('state.todo.newTitle'),
 
   filtered: computed('todos.@each.isCompleted', 'filter', function() {
     switch(this.get('filter')) {

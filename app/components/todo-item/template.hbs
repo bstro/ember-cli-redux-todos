@@ -1,4 +1,5 @@
 {{#if isEditing}}
+  {{log 'yargh'}}
   {{edit-todo class='edit' value=todo.title
                            focus-out=(action 'save' todo)
                            insert-newline=(action 'save' todo)}}

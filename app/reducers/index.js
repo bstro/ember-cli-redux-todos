@@ -1,9 +1,10 @@
 import redux from 'npm:redux';
-const { combineReducers } = redux;
+import reduxSideEffects from 'npm:redux-side-effects';
 
 import todo from './todo';
 
+const { combineReducers } = reduxSideEffects
+
 export default combineReducers({
-  // Add additional reducers here in order of data dependency.
-  todo
+    todo
 });
