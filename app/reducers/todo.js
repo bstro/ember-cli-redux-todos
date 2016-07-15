@@ -1,6 +1,5 @@
 import Ember from 'ember';
 import reduxSideEffects from 'npm:redux-side-effects';
-// import todoEffects from 'todoEffects'
 
 const {sideEffect} = reduxSideEffects;
 
